@@ -6,13 +6,21 @@
     color:yellow
 }
 
-span{
+section{
     position:sticky;
+    top:96%;
+    bottom:2%;
+    margin:6px;
+}
+
+span{
     border-radius:20px;
     background-color: #343A40;
     color:white;
     padding:7px 9px;
-    margin:6px;
-    top:96%;
-    bottom:2%;
+}
+
+i{
+    padding:5px;
+    font-size: 36px;
 }
