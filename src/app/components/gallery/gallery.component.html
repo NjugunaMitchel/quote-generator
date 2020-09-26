@@ -1,8 +1,6 @@
 <div>
-    <div class="row">
-        <div class="col-md-4 border m-1"> <img src="src/assets/quote.jpg"> </div>
-        <div class="col-md-4 border m-1"></div>
-        <div class="col-md-4 border m-1"></div>
+    <div class="row d-flex justify-content-around">  
+        <div class="col-md-3 border m-1 rounded"  *ngFor = "let  gallery of gallery"> <span> {{gallery.name}}</span> <span>{{gallery.quote}} </span></div>
         
     </div>
 </div>

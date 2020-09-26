@@ -1,3 +1,18 @@
-.col-md-4{
-    height:300px
+.col-md-3{
+    height:200px
+}
+
+.display{
+    color:yellow
+}
+
+span{
+    position:sticky;
+    border-radius:20px;
+    background-color: #343A40;
+    color:white;
+    padding:7px 9px;
+    margin:6px;
+    top:96%;
+    bottom:2%;
 }
