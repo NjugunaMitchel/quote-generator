@@ -1,11 +1,14 @@
 form{
     width:650px;
-    height:300px;
+    height:400px;
 }
 
-label{
-    display: inline-block
-}
 textarea{
     width:90%;
 }
+
+#one ,#two{
+    width:50%;
+    margin:5px;
+}
+

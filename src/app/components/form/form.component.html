@@ -1,14 +1,18 @@
-<div class="container">
+<div class="container" ngForm #forminput>
     <form class="border mx-auto text-center shadow-lg p-3 mb-5 bg-grey rounded">
         <h2 class="text-dark mb-4 mt-2 border-bottom">Your quote</h2>
-        <div>
-            <label class="font-weight-bold font-italic ">Name</label>
-            <input type="text" placeholder="Your name" class="mb-3 mr-3">
-            <label class="font-weight-bold font-italic ">Author</label>
-            <input type="text" placeholder="Quote by" class="mb-3 mr-3">
+        <div class="d-flex">
+            <div id="one">
+                <label class="font-weight-bold font-italic">Name</label>
+                <input type="text" placeholder="Your name" class="mb-3 mr-3 form-control"  id="name" ngModel name="name">
+            </div>
+            <div id="two">
+                <label class="font-weight-bold font-italic">Author</label>
+                <input type="text" placeholder="Quote by" class="mb-3 mr-3 form-control" id="author" ngModel name="author">
+            </div>
         </div>
-        <label class="font-weight-bold font-italic ">Quote</label><br>
-        <textarea placeholder="type your quote" class="mb-3 ml-3"></textarea> <br>
+        <label class="font-weight-bold font-italic">Quote</label><br>
+        <textarea placeholder="type your quote" class="mb-3 ml-3  form-control" id="quote"   ngModel name="quote"></textarea> <br>
 
         <button type="submit">Generate quote</button>
     </form>
