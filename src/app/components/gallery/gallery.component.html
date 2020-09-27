@@ -1,8 +1,10 @@
 <div>
-    <div class="row d-flex justify-content-around">  
-        <div class="col-md-3 border m-1 rounded"  *ngFor = "let  gallery of gallery"> 
-            <section><span> {{gallery.name}}</span> <span>{{gallery.quote}} </span>  <i class="fa fa-smile-o" aria-hidden="true"></i>  <i class="fa fa-frown-o" aria-hidden="true"></i> </section> 
-        
+    <div class="row d-flex justify-content-around">
+        <div class="col-md-3 border m-1 rounded" *ngFor="let  gallery of gallery">
+            <section><span> {{gallery.name}}</span> <span>{{gallery.author}} </span> <i class="fa fa-smile-o"
+                    aria-hidden="true"></i> <i class="fa fa-frown-o" aria-hidden="true"></i> </section>
+                    
+        </div>
     </div>
-</div>
+    <app-form (Quote)="addQuote($event)"></app-form>
 </div>
