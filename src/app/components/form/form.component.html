@@ -1,5 +1,5 @@
 <div class="container">
-    <form class="border mx-auto text-center shadow-lg p-3 mb-5 bg-grey rounded"  #forminput ="ngForm"  (ngSubmit) = "submitQuote()">
+    <form class="border mx-auto text-center shadow-lg p-3 mb-5 bg-grey rounded"  #forminput ="ngForm"  (ngSubmit) = "submitQuote(); forminput.resetForm({})">
         <h2 class="text-dark mb-4 mt-2 border-bottom">Your quote</h2>
         <div class="d-flex">
             

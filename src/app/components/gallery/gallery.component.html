@@ -1,12 +1,27 @@
 <div>
     <div class="row d-flex justify-content-around">
-        <div class="col-md-3 border m-1 rounded  bg-dark text-light" *ngFor="let  gallery of gallery;let i = index">
-            {{gallery.quote}} 
-            <p>~{{gallery.author}} posted on {{gallery.date |date  }}</p>
-                <button (click)='showMore(i)'>More</button>
+        <div class="col-md-3 border m-1 rounded  bg-dark text-light shadow-lg" *ngFor="let  gallery of gallery;let i = index">
+            <div appHighlightQuote *ngIf="highlightHighest() == gallery.upVote && gallery.upVote > 0">
+                <p class="text-danger">{{gallery.quote}}  </p>
+                <p class="font-italic d-inline">~by {{gallery.author}}  {{gallery.date |date  }}</p>
+                    <button (click)="showMore(i);">More</button>
+    
+                    <app-gallery-details  *ngIf="gallery.showMore"[gallery] = "gallery" (remove) = "deleteGallery($event, i)"></app-gallery-details>
+            </div>
 
-                <app-gallery-detail  *ngIf="gallery.showMore"[gallery] = "gallery" (remove) = "deleteGallery($event, i)"></app-gallery-detail>
+            <div *ngIf="highlightHighest() != gallery.upVote || gallery.upVote == 0">
+
+                <p class="text-center align-middle mt-5"><strong> {{gallery.quote}}</strong></p> 
+                <p class="font-italic d-inline font-weight-bold font-weight-lighter">~{{gallery.author}}</p>
+                    <p> 
+                        <button (click)="showMore(i);">More</button>
+                    </p>
+    
+                    <app-gallery-details  *ngIf="gallery.showMore"[gallery] = "gallery" (remove) = "deleteGallery($event, i)"></app-gallery-details>
+            </div>
+            </div>
+            
+                
         </div>
     </div>
-    <app-form (addQuote)="addNewQuote($event)"> </app-form>
-</div>
+    <app-form (Quote)="addNewQuote($event)"> </app-form>

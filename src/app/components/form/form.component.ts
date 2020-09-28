@@ -9,15 +9,15 @@ import { Display }  from 'src/app/models/display';
 })
 export class FormComponent implements OnInit {
    
-  newDisplay = new Display(0,'','','',0,0, new Date())
+  newDisplay = new Display('','','',0,0, new Date())
   @Output() Quote = new EventEmitter<Display>();
-  gallery: any;
+ 
 
   
   submitQuote(){
     
     this.Quote.emit(this.newDisplay)
-    this.newDisplay = new Display(0,'','','',0,0,new Date())
+    this.newDisplay = new Display('','','',0,0,new Date())
    console.log('winning') 
   
   }
