@@ -16,10 +16,9 @@ export class FormComponent implements OnInit {
   
   submitQuote(){
     
-    this.newDisplay = new Display(0,'','','',0,0,new Date())
     this.Quote.emit(this.newDisplay)
-    /* this.gallery.push(this.newDisplay);
-   console.log('winning') */
+    this.newDisplay = new Display(0,'','','',0,0,new Date())
+   console.log('winning') 
   
   }
   

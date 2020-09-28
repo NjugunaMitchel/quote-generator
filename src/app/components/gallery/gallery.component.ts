@@ -1,5 +1,6 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { Display }  from 'src/app/models/display'
+import { Component, OnInit} from '@angular/core';
+import { Display }  from 'src/app/models/display';
+
 
 @Component({
   selector: 'app-gallery',
@@ -16,7 +17,6 @@ export class GalleryComponent implements OnInit {
   ]
   Display: any;
   addNewQuote(gallery){
-    
     this.gallery.push(gallery);
   }
   
@@ -29,11 +29,7 @@ export class GalleryComponent implements OnInit {
     }
   }
   
-  
-
- 
   constructor() { }
- 
 
   ngOnInit(): void {
   }
