@@ -1,4 +1,15 @@
 # QuoteGenerator
+## Author : Mitchel Njuguna
+
+## ABOUT
+An app that allows you to create a quote and have it added to the Display
+
+## Figma link
+figma link https://www.figma.com/file/8b7vWBJpPfdgPFN4DKBtso/quote-generator?node-id=0%3A1
+
+## Support and contact details
+
+Should you be unable to access the website, have any recommendations and/or questions, feel free to email me:[sonimichie@gmail.com]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
@@ -25,3 +36,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Copyright (c) 2020  mitchelNjuguna
