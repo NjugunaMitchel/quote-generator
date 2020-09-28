@@ -1,8 +1,8 @@
 <div class="container">
-    <form class="border mx-auto text-center shadow-lg p-3 mb-5 bg-grey rounded"  #forminput ="ngForm"  (ngSubmit) = "submitQuote()" novalidate   >
+    <form class="border mx-auto text-center shadow-lg p-3 mb-5 bg-grey rounded"  #forminput ="ngForm"  (ngSubmit) = "submitQuote()">
         <h2 class="text-dark mb-4 mt-2 border-bottom">Your quote</h2>
         <div class="d-flex">
-            {{ newDisplay.name }}
+            
             <div id="one">
                 <label class="font-weight-bold font-italic">Name</label>
                 <input type="text" placeholder="Your name" class="mb-3 mr-3 form-control"  id="name"  name="name" [(ngModel)] = "newDisplay.name" #name = "ngModel">

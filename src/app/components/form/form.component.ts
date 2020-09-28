@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Display }  from 'src/app/display';
+import { Display }  from 'src/app/models/display';
 
 
 @Component({
@@ -8,28 +8,22 @@ import { Display }  from 'src/app/display';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+   
+  newDisplay = new Display(0,'','','',0,0, new Date())
+  @Output() Quote = new EventEmitter<Display>();
+  gallery: any;
 
-  gallery:Display[]= [
-    {name:'Mishel', author:'mishel', quote:'Yolo my people'},
-    {name:'Mishel', author:'mishel', quote:'Yolo my people'}, 
-    {name:'Mishel', author:'mishel', quote:'Yolo my people'}
-    
-  ]
-
-  newDisplay = new Display('',' ',' ')
-  @Output() Quote = new EventEmitter<Display>()
-
-
-  getId(){
-    Math.ceil(Math.random())
-  }
-  constructor() { }
-
+  
   submitQuote(){
+    
+    this.newDisplay = new Display(0,'','','',0,0,new Date())
     this.Quote.emit(this.newDisplay)
-   console.log('winning')
+    /* this.gallery.push(this.newDisplay);
+   console.log('winning') */
+  
   }
-
+  
+  constructor() { }
  
 
   ngOnInit(): void {
