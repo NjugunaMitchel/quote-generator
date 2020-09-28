@@ -9,6 +9,7 @@ import { FormComponent } from './components/form/form.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { GalleryDetailsComponent } from './components/gallery-details/gallery-details.component';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './directive/highlight.directive';
 
 
 
@@ -22,6 +23,7 @@ import { DateCountPipe } from './date-count.pipe';
     GalleryComponent,
     GalleryDetailsComponent,
     DateCountPipe,
+    HighlightDirective,
     
   ],
   imports: [
