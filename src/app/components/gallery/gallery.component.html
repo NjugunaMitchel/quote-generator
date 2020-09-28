@@ -1,6 +1,6 @@
 <div>
     <div class="row d-flex justify-content-around">
-        <div class="col-md-3 border m-1 rounded" *ngFor="let  gallery of gallery;let i = index">
+        <div class="col-md-3 border m-1 rounded  bg-dark text-light" *ngFor="let  gallery of gallery;let i = index">
             {{gallery.quote}} 
             <p>~{{gallery.author}} posted on {{gallery.date |date  }}</p>
                 <button (click)='showMore(i)'>More</button>
