@@ -1,9 +1,10 @@
-<div>
-    <section>
-        <span>Posted by {{gallery.name}} </span><i class="fa fa-smile-o"
-        aria-hidden="true" (click) = "upvote()"> {{gallery.upvotes}} </i> <i class="fa fa-frown-o" aria-hidden="true" (click) = "downvote()">{{gallery.downvotes}}</i> posted on {{gallery.date | dateCount}}
+<p class="font-weight-bolder font-italic">Posted by {{gallery.name}}  {{gallery.date | dateCount}} days ago</p>
+<div class="d-inline pb-5">
+    <section class="d-flex pb-2 justify-content-end">
+        <i class="fa fa-smile-o p-1"
+        aria-hidden="true" (click) = "upvote()"> {{gallery.upvotes}} </i> <i class="fa fa-frown-o ml-2 p-1" aria-hidden="true" (click) = "downvote()">{{gallery.downvotes}}</i> 
        
-        <button (click) = "deleteQuote(true)">Delete</button>
+        <span class="pl-3" (click) = "deleteQuote(true)"><h4><i class="fa fa-trash-o pr-3" aria-hidden="true"></i></h4></span>
 
     </section>
 </div>

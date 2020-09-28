@@ -1,6 +1,6 @@
-.col-md-3{
+/* .col-md-3{
     height:200px
-}
+} */
 
 .display{
     color:yellow
@@ -21,6 +21,6 @@ span{
 }
 
 i{
-    padding:5px;
-    font-size: 24px;
+    margin:5px;
+    font-size: 28px;
 }
